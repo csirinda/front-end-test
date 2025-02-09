@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .curve-top {
+        border-radius: 100% 100% 0 0 / 20% 20% 0 0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <!-- Navigation -->
+      <div class="min-h-screen bg-white">
+        <!-- Navigation -->
+        <nav class="bg-[#ee5142] p-4">
+          <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+              <img src="/src/assets/logo.png" alt="gemnine logo" class="h-10" />
+              <!-- Desktop Menu -->
+              <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-white">...home</a>
+                <a href="#" class="text-white">_service</a>
+                <a href="#" class="text-white">_portfolio</a>
+                <a href="#" class="text-white">_blog</a>
+                <a href="#" class="text-white">_contact</a>
+              </div>
+              <img
+                src="/src/assets/icon_search.png"
+                alt="gemnine logo"
+                class="hidden md:flex h-6"
+              />            
+              <!-- Mobile Menu Button -->
+              <button id="mobileMenuButton" class="md:hidden flex items-center">
+                <img
+                  src="/src/assets/icon_search.png"
+                  alt="gemnine logo"
+                  class="h-6 px-2"
+                />
+                <img
+                  src="/src/assets/icon_menu.png"
+                  alt="icon_menu"
+                  class="h-10 px-2"
+                />              
+              </button>
+            </div>
+          </div>
+        </nav>
+  
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-white z-50 hidden">
+          <div class="container mx-auto px-4 py-8">
+            <div class="flex justify-end">
+              <button id="closeMenu">
+                <img src="/src/assets/icon_close_grey.png" alt="Close menu" class="h-8 w-8 z-100">
+              </button>
+            </div>
+            <div class="flex flex-col items-start space-y-6 mt-16">
+              <a href="#" class=" text-2xl">...home</a>
+              <a href="#" class=" text-2xl">_service</a>
+              <a href="#" class=" text-2xl">_portfolio</a>
+              <a href="#" class=" text-2xl">_blog</a>
+              <a href="#" class=" text-2xl">_contact</a>
+            </div>
+          </div>
+        </div>
+
+      
+
+      <!-- Hero Section -->
+      <div class="relative">
+        <!-- Red Background Section -->
+        <div class="bg-[#ee5142] text-white pb-32">
+          <div class="flex mx-auto px-4 py-12 md:py-24">
+            <div class="max-w-4xl mx-auto relative">
+              <!-- Hello with bubble -->
+              <div class="relative inline-block">
+                <img
+                  src="/src/assets/circle.png"
+                  alt=""
+                  class="absolute -left-2 max-w-60 h-8 md:w-30 md:h-14 opacity-80"
+                  aria-hidden="true"
+                />
+                <p
+                  class="text-xl md:text-4xl font-extralight mb-4 relative z-10"
+                >
+                  Hello
+                </p>
+              </div>
+              <!-- Main text and illustration container -->
+              <div class="relative">
+                <!-- Text content -->
+                <div class="relative z-10">
+                    <!-- เพิ่ม z-index ให้ text อยู่ด้านบนของรูป -->
+                    <h1 class="text-4xl mb-40 md:text-7xl md:mb-4">YOUR DESIGN</h1>
+                    <h2 class="text-4xl md:text-7xl font-bold">OUR SOLUTIONS</h2>
+                
+                    <div class="flex flex-col items-center relative z-20">
+                        <p class="text-sm text-center mt-32">scroll down</p>
+                        <img src="/src/assets/vector.png" class="flex w-2 h-4 mt-2" />
+                    </div>
+                
+                    <!-- Image that overlaps the text -->
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2  z-30">
+                        <img src="/src/assets/scroll.png" class="w-24 h-auto opacity-60" />
+                    </div>
+                </div>
+
+                <!-- Illustration -->
+                <div
+                  class="absolute top-20 -right-3 md:-top-3 md:-right-3 transform translate-x-1/4 -translate-y-1/4 w-30 md:w-56 lg:w-[300px] opacity-90"
+                >
+                  <!-- ปรับขนาดตาม responsive -->
+                  <img
+                    src="/src/assets/businessman.png"
+                    alt="Designer illustration"
+                    class="w-full h-auto"
+                  />
+                </div>
+
+                <div
+                  class="absolute top-16 -left-12 md:top-24 md:-left-24 transform translate-x-1/4 -translate-y-1/4 w-30 md:w-56 lg:w-[300px] opacity-90"
+                >
+                  <!-- ปรับขนาดตาม responsive -->
+                  <img
+                    src="/src/assets/flower.png"
+                    alt="flower"
+                    class="w-20 h-auto"
+                  />
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+
+        <!-- White Curved Section -->
+        <div class="bg-white curve-top relative -mt-20 w-full overflow-hidden">
+          <div class="container mx-auto px-4 py-8 md:py-16">
+            <!-- Mobile Layout -->
+            <div class="block lg:hidden">
+              <div class="mb-8 text-center max-w-xs mx-auto">
+                <p class="text-gray-600 mt-8 mb-6">Accusamus Et lust</p>
+                <h2 class="text-gray-600 text-5xl mb-10">
+                  The way we do things in our line of work.
+                </h2>
+                <p class="whitespace-pre-line text-gray-600 text-sm mb-2">
+                  We are helping client to create WordPress websites with our
+                  talented expert.
+                </p>
+                <a
+                  href="#"
+                  class="text-gray-600 inline-block mt-3 mb-5 text-sm"
+                >
+                  Read case study →
+                </a>
+              </div>
+
+              <!-- Service Cards -->
+              <div class="flex flex-col items-center gap-6 max-w-xs mx-auto">
+                <div class="text-center my-4">
+                  <img
+                    src="/src/assets/element_web.png"
+                    alt="Web UI/UX"
+                    class="h-10 mx-auto mb-3"
+                  />
+                  <h3 class="text-gray-600 mb-1 text-lg">Web UI/UX Design</h3>
+                  <p class="whitespace-pre-line text-gray-600 text-xs">
+                    We are helping client to create WordPress websites.
+                  </p>
+                </div>
+                <div class="text-center my-4">
+                  <img
+                    src="/src/assets/element_mobile.png"
+                    alt="Mobile UI/UX"
+                    class="h-10 mx-auto"
+                  />
+                  <h3 class="text-gray-600 mb-1 text-lg">
+                    Mobile UI/UX Design
+                  </h3>
+                  <p class="whitespace-pre-line text-gray-600 text-xs">
+                    We are helping client to create WordPress websites.
+                  </p>
+                </div>
+                <div class="text-center my-4">
+                  <img
+                    src="/src/assets/element_branding.png"
+                    alt="Branding Design"
+                    class="h-10 mx-auto"
+                  />
+                  <h3 class="text-gray-600 mb-1 text-lg">Branding Design</h3>
+                  <p class="whitespace-pre-line text-gray-600 text-xs">
+                    We are helping client to create WordPress websites.
+                  </p>
+                </div>
+                <div class="text-center my-4">
+                  <img
+                    src="/src/assets/element_creative.png"
+                    alt="Creative Design"
+                    class="h-10 mx-auto"
+                  />
+                  <h3 class="text-gray-600 mb-1 text-lg">Creative Design</h3>
+                  <p class="whitespace-pre-line text-gray-600 text-xs">
+                    We are helping client to create WordPress websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop Layout -->
+            <div class="hidden lg:grid lg:grid-cols-2 gap-8 mt-16">
+              <!-- Text Section - Left Side -->
+              <div class="max-w-xl pr-8">
+                <p class="text-gray-600 mb-4">Accusamus Et lust</p>
+                <h2 class="text-gray-600 text-7xl mb-14">
+                  The way we do things in our line of work.
+                </h2>
+                <p class="text-gray-600 text-2xl mb-5">
+                  We are helping client to create WordPress websites with our
+                  certified expert.
+                </p>
+                <a href="#" class="text-gray-600 inline-block mt-4"
+                  >Read case here →</a
+                >
+              </div>
+
+              <!-- Service Cards - Right Side -->
+              <div class="flex flex-wrap justify-between gap-y-12">
+                <!-- Left Column -->
+                <div class="flex flex-col space-y-8">
+                  <div class="p-4">
+                    <img
+                      src="/src/assets/element_web.png"
+                      alt="element web"
+                      class="h-10 mb-4"
+                    />
+                    <h3 class="text-2xl mb-2">Web UI/UX Design</h3>
+                    <p class="whitespace-pre-line text-gray-600 text-sm">
+                      We are helping client to create WordPress websites.
+                    </p>
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="/src/assets/element_branding.png"
+                      alt="element web"
+                      class="h-14 mb-4"
+                    />
+                    <h3 class="text-2xl mb-2">Branding Design</h3>
+                    <p class="whitespace-pre-line text-gray-600 text-sm">
+                      We are helping client to create WordPress websites.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col space-y-8 mt-8">
+                  <div class="p-4">
+                    <img
+                      src="/src/assets/element_mobile.png"
+                      alt="element web"
+                      class="h-14 mb-4"
+                    />
+                    <h3 class="text-2xl mb-2">Mobile UI/UX Design</h3>
+                    <p class="whitespace-pre-line text-gray-600 text-sm">
+                      We are helping client to create WordPress websites.
+                    </p>
+                  </div>
+                  <div class="p-4">
+                    <img
+                      src="/src/assets/element_creative.png"
+                      alt="element web"
+                      class="h-14 mb-4"
+                    />
+                    <h3 class="text-2xl mb-2">Creative Design</h3>
+                    <p class="whitespace-pre-line text-gray-600 text-sm">
+                      We are helping client to create WordPress websites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="bg-white py-6">
+        <div class="container mx-auto px-4">
+          <div
+            class="flex justify-between items-center  text-gray-600 text-sm overflow-hidden"
+          >
+            <img src="/src/assets/star.png" class="w-20 h-auto">
+            <span class="text-3xl text-gray-400">DESIGN</span>
+            <img src="/src/assets/star.png" class="w-20 h-auto">
+            <span class="text-3xl text-gray-400">CREATIVE</span>
+            <img src="/src/assets/star.png" class="w-20 h-auto">
+            <span class="text-3xl text-gray-400">UX/UI</span>
+            <img src="/src/assets/star.png" class="w-20 h-auto">
+            <span class="text-3xl text-gray-400">RESULTS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const mobileMenuButton = document.getElementById('mobileMenuButton');
+          const mobileMenu = document.getElementById('mobileMenu');
+          const closeMenu = document.getElementById('closeMenu');
+  
+          mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.remove('hidden');
+          });
+  
+          closeMenu.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      </script>     
+  </body>
+</html>
